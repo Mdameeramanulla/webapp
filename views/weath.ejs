@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      .weather-info{
+        background-color:lavender;
+        width:300px;
+        margin-left: 800px;
+        height: 300px;
+        margin-top: 130px;
+        font-size: 20px;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+      }
+      input{
+        background-color:lightcyan;
+        font-size: 20px;
+        margin-left:800px;
+        margin-top: 250px;
+      }
+      button{
+        background-color:;
+        height: 30px;
+        margin-left:800px;
+      }
+      body{
+        background-color:lightskyblue;
+        background-image:url("https://img.freepik.com/free-vector/dark-clouds-with-rainfall-thunder-flash-background_1017-32181.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+      }
+    </style>
+    <title>Weather Information</title>
+</head>
+<body>
+    <form method="POST" action="/ameer">
+        <input type="text" name="city" placeholder="Enter a city"><br><br><br><br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        <button type="submit">Submit</button>
+    </form>
+    <div class="weather-info">
+        <br><h2>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<%= City %>, <%= Country %></h2>
+        <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspTemperature: <%= (Temperature ) %>°C</p>
+        <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspHumidity: <%= Humidity %> %</p>
+        <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspWind Speed: <%= Wind %> m/s</p>
+    </div>
+</body>
+        </html>
